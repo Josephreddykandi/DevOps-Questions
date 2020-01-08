@@ -1,0 +1,105 @@
+
+1. which tool have you used for implement CI/CD ? 
+	--jenkins
+2. Any alternate tool do you know for CI/CD ? 
+	--temcity, bamboo, udeploy -- i haven't get any chance to work on these tools but i can work because the workflow is same as Jenkins the configuration is different 
+3. what is Continuous Integration? 
+     - get the source code
+	 - compile the code
+	 - build the code
+	 - static code analysis (sonarqube)
+	 - pushing artifacts 
+	 - any stage job failed send the notification to respective members.
+	git --> github --> jenkins --> maven--> junit--> sonarqube --> nexus  
+ 
+4. what type of jobs have you configured in jenkins? 
+	--freestyle, pipeline, maven jobs
+5. what are the types of jobs are available in jenkins? 
+	--based up on plug in we can configure the diff jobs
+6. what is difference b/w freestyle and pipeline? 
+	--in freestyle we can specify the steps (UI Based we can specify each step )but in pipeline (DSL code )we can written our job work flow 
+7. what is pipeline? 
+	-pipeline is one of the plug in jenkins, by using this we can write our job work flow end to end. here we can mentioned the jobs should process in series or parallel way and define the tasks should perform on different nodes. 
+	ans) A Pipeline is a user-defined model of a CD pipeline. A Pipeline’s code defines your entire build process, which typically includes stages for building an application, testing it and then delivering it. 
+8. what is declarative pipeline? 
+	the syntax start with "pipeline" 
+ 
+	pipeline {
+		agent any 
+    stages {
+        stage('Build') { 
+            steps {
+                // 
+            }
+        }
+		}}
+		
+9. what is difference between  declarative pipeline and script based pipeline?
+	script based code
+  
+	node {  
+    stage('Build') { 
+        // 
+    }
+	}
+
+10. write the pipeline syntax?
+
+
+11. what is master/slave architecture? what is the use of master/slave? 
+	--we can't burden the master to run the all jobs so here we are using master/slave configuration, we can assign the jobs on slave and slave will perform the tasks. 
+12. How many we can connect the slaves? 
+
+	-- via SSH 
+	-- java Web start 
+13. How many ways we can provide security for your jenkins server? 
+
+	Enabling Security
+	JNLP TCP Port
+	Access Control
+	Markup Formatter
+14. what is sonarqube ? have you configure ? How you configure ?
+	- sonarqube is a static code analysis, it is analysis the code and if any wrong in syntax, spellings, extra quotes it will display those things. 
+	for this one we need a sonar server (configure in configure systems)and sonar scanner (global tool configure).   
+15. what type of artifactory repository tool have you used? 
+	- nexus , JFrog 
+16. what is the use of artifactory tools? 
+
+	- artifactory tool is a centralized repository. we can store our artifacts in it and store the all versions of artifacts  & we can share those to different teams (QA, testing, staging, prod..)
+17. How you declare a variables in pipeline?
+
+	- in script based pipeline, we need to define the variable and then assign the value for it, then call it whenever u need.
+  
+		def mvnhome
+		
+		mvnhome = tool 'MAVEN'
+		
+		calling 
+		
+		${mavnhome}
+
+18. what is DSL language? domain spcific language? 
+
+	--Grovey is DSL language
+
+	--use of this is to allow the different commands like shell, env variables, bat (windows)commands
+19. what is upstream/downstream projects? what is the use of it? which scenario you configure?
+
+	--if the project has dependency with another project we can go with upstream/downstream process. and take the previous build out put to next build input we can go for the upstream/downstream.  
+20. If you have 10 repositories in github how many jobs you can configure?
+
+	-- we need to configure the 10 jobs. 
+21. Dou you have experience to install jenkins?
+22. How you configure jdk,maven,gradle...etc?
+23. In my environment i have different version for java implementation projects is there ? How you configure multiple jdk's?
+	-- in global tool configuration we can configure the different type of JDK versions. 
+24. what are the plugins have you used in your project?
+25. How to take backup my jenkins? 
+	-- .jenkins file we need copy 
+	-- thin backup plugin is used to take the back up. 
+26. what is jenkins Home directory?  
+	--in linux -- /var/lib/jenkins
+27. How to deleted old builds automatically?
+	--in job configuration we can specify how many builds we need to keep. 
+28. How to configure multiple environment deployment?
+	-- in job configuration section -- select parameterized build , here you can specify the dev, stage, prod environments.  

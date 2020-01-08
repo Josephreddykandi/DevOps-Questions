@@ -1,0 +1,32 @@
+Docker interview questions real-time
+--------------------------
+1. what is docker? it is a software to build and run the application with less space/ resources. 
+2. what is difference between vm's and docker ? in VM's we need to install the guest OS (specify the RAM and all stuff)on top of the base OS, here we nrun the our applications. in Docker no need to install guest OS, on top of the physical/base OS we can our applications. Docker is a shared library. 
+2. what is difference between vm's and docker ? in VM's we need to install the guest OS (specify the RAM and all stuff)on top of the base OS, here we nrun the our applications. in Docker no need to install guest OS, on top of the physical/base OS we can our applications. 
+3. what is dockerfile? it consists of executable commands. here we can write our applications needs. 
+4. what is difference between the kill and stop? Kill means remove the application we can't start once kill the process/application. in Stop, there is a possibility that we can start our application. 
+5. what is difference between and Add and copy commands in a docokerfile? COPY means we can copy the files from host system to the docker images (in b/w VM nad docker images). ADD is used to copy the files from not only the host m/c(vm) it also get the files/anything from outside of the system (web)
+
+6. what is difference between cmd and entrypoint ? CMD is executable command while run the container we can overwrite the value. entrypoint it is starting point, append the values while run the container in command line. 
+7. which is the base image you will prefer your docker file ? alpine
+8. how login a running container ? docker exec -it contianerid  (to connect to the container), come out of the container - Crl+p+q
+9. how to check live logs in docker containers? docker logs --follow
+10. how to check no.of containers running your machine ? docker ps
+11. how to check stop and running containers ? docker ps -a
+12. what is port forwarding? -p 8181:9090
+13. How to run a container in background? -d (detached mode)
+14. what is first line in a dockerfile? FROM (here we can specify the base image)
+14. what are the commands have you used in your docker file ? FROM RUN CMD ENTRYPOINT label workdir COPY ADD EXPOSE VOLUME 
+15. what is label in docker? it is nothing but a version of the docker images. 
+16. what is docker tag? for rename the image we can use tag
+17. How you store data persistently? we use volumes
+18. have you worked on docker volumes? -v hostmachie/path:container/data/path
+19. what is docker network ?
+20. I have a one web application is running on one container and database is running in one container how you communicate these two containers? docker --link 
+21. where you are store docker images?  registry2 |jforg |dockerhub
+22. how to run multiple containers at a time?  docker run we can run only one container at a time. for multiple containers we use docker-compose - here we write the YAML files. 
+23. how to share data between two containers?  container 2 want to use the data of the container 1. while running the container 2 use the below command. 
+container 1 
+
+
+  docker run --volumes-from container1 --name container2

@@ -1,0 +1,16 @@
+1.i have been working in Zeta Global as a Techinacl associate since 2.3 years.
+2.Zeta is an ESP provider and clients are sending bulck emails with required content using our applications. in our company we are different applications to sned the bulk emails. 
+3. i am supporing one of the big application in our company i.e Impact. Impact having big clients like samsclub, sprint, at&T , JPMC,etc..
+4. they sned the bulk emails to their customers using our application. 
+5. we monitor their jobs and infrastructure of the appliaction. here we are useing Appworx as a job scheduler and 
+
+as a L1 support guy, our responsibility is to provide the best soluctions to the clients in timely manner and to maintain the application availability. we are working closely with the engineering teams or product devlopement team to advise the concerning changes on system level or application level. .
+6. clients or ac team have any issues with Application, they raise those issues with us using JIRA ticketing system. we assign those tickets and provide the resolution ASAP. if the issue is still persist, we escalate to the engineering teams and provide our intial investigation steps.  
+7. as a support persion we have access to most of the servers.in our appliaction we are using Oracle 12c and i have good knowledge on writing queries and executed those on Oracle DB to view the sucessful transation of the data and to validate the data. we will restart the serers if needed. ex: if any jobs not picked up on some of the servers, check the logs of the sevrer if the sever is not prcessing the jobs we will restart the server. 
+8.stopping the requeried services during maintenance or upgrade for fixing the issues.
+9.performing the sanity tesing on appliaction after the maintenance activity. to check the all services are working properly. 
+10.having good knowledge on creating confluence pages in JIRA on major topics.
+11. conduucted application trainings to new members in our team. 
+
+
+I am one of the first line contact person for clients/stake holders. 
