@@ -1,31 +1,53 @@
-**1. What is git?** Git is a distributed version-control system for tracking changes in source code during software development.
+1. What is git?
+Git is a distributed version-control system for tracking changes in source code during software development.
+
 2. What is difference between git and GitHub and GitLab (for CI tool also we can use)? git a local repository - CLI, Github is a remote repository - GUI, GitLab is same as GitHub and it has more features. 
+
 3. Any other version control tools other than git? SVN, clearcase, 
+
 4. What is difference between svn and git? SVN is a centralized VCS. Git is a distributed VCS. 
+
 5. What is merge conflicts have you faced ever in you experience? if you face how you resolve? whenever two developers works on same file and one Dev push there changes. another one has old copy, he also done his work and try to push to remote repository. here git shows error as you have old copy. 
 now pull the new copy from remote repository. 
 add, commit, push here you see merge conflit. 
 git status --> gives the where the conflict occur. change that file, or unwanted lines and push to remote server.  
+
 6. What is git stash?
+
 7. What is git HEAD? it point outs the latest commit in MASTER branch. we can see this in git logs. 
+
 8. What is staging area in git? after add and before commit.  
+
 9. What is difference between git fetch and pull and clone?
 Git fetch --> if we have same file in local and remote repository, when we run fetch command it won't affected the local files or repository. (don't want modify the local files, it pull the all files ), "bring my local copy of the remote repository up to date"
 Git Clone --> it created a copy.  
 Git Pull --> it pull the all the changes from remote server.(modifies the local files). "bring the changes in remote repository to where i keep my own code"
 
+
 10. What is difference between git merge and rebase? when we do git merge, it does,t show the commit messages in logs . 
+
 11. What is .gitignore file? What is the purpose of the file? don't want to pull the files put those files in .gitignore folder. 
+
 12. What is git branch? Have you worked on branches?
+
 13. How to merge branches? or re base command 
+
 14. What is cherry-pick in git? pick the commit from one branch and merge that commit to another branch. 
+
 15. How to create a git project?
+
 16. How to check difference in between two files? git diff file1 -- it shows the modifications of the file. 
+
 17. How edit the committed message? -amend
+
 18. How to check the last few commits? git logs
+
 19. How to delete remote branch and local branch ?
+
 20. How to create local branch?
+
 21. What is tag? How many types in tag? How we will create tags? to release vesion go for tags . 
+
 22. How to roll back committed code.  git reset 
 
 
